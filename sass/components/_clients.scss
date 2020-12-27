@@ -9,7 +9,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 .clients {
   display: inline-flex;
@@ -22,7 +22,7 @@
 .clients-list {
   width: 170px;
   height: 90px;
-  border: 1px solid var(--social-color);
+  border: 1px solid $social-color;
   box-sizing: border-box;
   border-radius: 4px;
   align-content: center;
@@ -40,13 +40,13 @@
 .logo-4,
 .logo-5,
 .logo-6 {
-  --color4: var(--social-color);
-  --color2: var(--social-color);
+  --color4: $social-color;
+  --color2: $social-color;
 }
 .client-link:hover,
 .client-link:focus {
-  border: 1px solid var(--accent-color);
-  transition: color 250ms var(--timing-function);
+  border: 1px solid $accent-color;
+  transition: color 250ms $timing-function;
 }
 .client-link:hover .logo-1,
 .client-link:hover .logo-2,
@@ -60,10 +60,9 @@
 .client-link:focus .logo-4,
 .client-link:focus .logo-5,
 .client-link:focus .logo-6 {
-  --color2: var(--accent-color);
-  --color4: var(--accent-color);
-  fill: var(--accent-color);
-  transition: var(--color2) 250ms var(--timing-function),
-    var(--color4) 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
+  --color2: $accent-color;
+  --color4: $accent-color;
+  fill: $accent-color;
+  transition: --color2 250ms $timing-function, --color4 250ms $timing-function,
+    fill 250ms $timing-function;
 }
