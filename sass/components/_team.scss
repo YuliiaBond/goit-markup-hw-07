@@ -42,20 +42,6 @@
   justify-content: space-evenly;
   height: 44px;
 }
-.social-link {
-  display: flex;
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-}
-.social-link:hover,
-.social-link:focus {
-  background-color: $accent-color;
-  width: 44px;
-  height: 44px;
-  border: 1px soli transparent;
-  border-radius: 50%;
-}
 .instagram,
 .twitter,
 .facebook,
@@ -64,15 +50,31 @@
   padding: 0;
   fill: $social-color;
 }
-.social-link:hover .instagram,
-.social-link:focus .instagram,
-.social-link:hover .twitter,
-.social-link:focus .twitter,
-.social-link:hover .facebook,
-.social-link:focus .facebook,
-.social-link:hover .linkedin,
-.social-link:focus .linkedin {
-  color: $accent-color;
-  fill: $primary-bg-color;
-  transition: color 250ms $timing-function, fill 250ms $timing-function;
+.social-link {
+  display: flex;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    width: 44px;
+    height: 44px;
+    border: 1px soli transparent;
+    border-radius: 50%;
+  }
+
+  &:hover .instagram,
+  &:focus .instagram,
+  &:hover .twitter,
+  &:focus .twitter,
+  &:hover .facebook,
+  &:focus .facebook,
+  &:hover .linkedin,
+  &:focus .linkedin {
+    color: $accent-color;
+    fill: $primary-bg-color;
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+  }
 }

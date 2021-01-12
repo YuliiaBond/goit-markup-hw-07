@@ -31,17 +31,19 @@
   padding-bottom: 32px;
 
   color: $title-text-color;
-
+  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: color 250ms $timing-function;
+  }
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $accent-color;
-  transition: color 250ms $timing-function;
-}
+
 .site-nav .link.current {
   position: relative;
   color: $accent-color;
@@ -68,6 +70,11 @@
 .auth-nav .item + .item {
   margin-left: 50px;
 }
+.envelope,
+.smartphone {
+  margin-right: 10px;
+  fill: $primary-text-color;
+}
 .auth-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -76,28 +83,25 @@
 
   font-size: 14px;
   line-height: 16px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+  }
+
+  &:hover .envelope,
+  &:focus .envelope,
+  &:hover .smartphone,
+  &:focus .smartphone {
+    color: $accent-color;
+    fill: $accent-color;
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+  }
 }
 .item-mail > .link {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.envelope,
-.smartphone {
-  margin-right: 10px;
-  fill: $primary-text-color;
-}
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: $accent-color;
-  fill: $accent-color;
-  transition: color 250ms $timing-function, fill 250ms $timing-function;
-}
-.auth-nav .link:hover .envelope,
-.auth-nav .link:focus .envelope,
-.auth-nav .link:hover .smartphone,
-.auth-nav .link:focus .smartphone {
-  color: $accent-color;
-  fill: $accent-color;
-  transition: color 250ms $timing-function, fill 250ms $timing-function;
 }
